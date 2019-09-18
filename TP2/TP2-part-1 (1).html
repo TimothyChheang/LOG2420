@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Scénario d'élasticité prix</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+background-color:rgb(102,101,100);
+padding:10px;
+text-align: center;
+font-size:35px;
+color:white;
+}
+
+nav {
+background-color:rgb(205,204,203);
+float:left;
+width:16%;
+height:250px;
+padding:5px;
+}
+
+
+
+footer {
+background-color:rgb(102,101,100);
+height:30px;
+position:relative;
+clear:both;
+}
+
+.input-col1, .input-col2, .input-col3 {
+  float: left;
+  width: 28%;
+  padding: 10px;
+}
+
+#inputs {
+  width:auto;
+}
+
+.input-field {
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.company {
+text-align: center;
+color:white;
+}
+
+.dropdown{
+    width: 100%;
+    background-color:rgb(224,223,222);
+    text-align:center;
+}
+
+
+
+.alpha {background-color:rgb(128,12,12) }
+.beta {background-color:rgb(234,126,60)}
+.gamma {background-color:rgb(255,191,50)}
+.epsilon {background-color:rgb(14,176,235)}
+.mobile {background-color:rgb(0,32,94)}
+.iota {background-color:rgb(110,49,155)}
+.theta {background-color:rgb(253,55,201)}
+.kappa {background-color:rgb(3,0,1)}
+
+@media (max-width: 600px) {
+  nav {
+    width:100%;
+    height:auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  nav ul li {
+    float:left;
+    padding:5px;
+  }
+
+  header {
+    font-size: 20px;
+  }
+}
+</style>
+
+<script>
+  panel = function(el, show, hide) {
+  <!-- à compléter -->
+  }
+</script>
+
+</head>
+<body>
+
+<header>
+  <h2>Scénarios d'élasticité-prix</h2>
+</header>
+
+<nav>
+  <ul style="list-style-type:none;">
+    <li><a href="#" onclick="panel(this, 'inputs','output')" style="font-weight: bold;">Inputs</a></li>
+    <li><a href="#" onclick="panel(this, 'output','inputs')">Output</a></li>
+  </ul>
+</nav>
+
+<div id="inputs"> 
+
+    <div class="input-col1">
+        <div class="input-field">
+            <div class ="company alpha">Price Shift Alpha </div>
+            <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>
+        <div class="input-field">
+            <div class ="company beta">Price Shift Beta </div>
+            <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>       
+        <div class="input-field">
+            <div class ="company gamma">Price Shift Gamma </div>
+            <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div> 
+        <div class="input-field">
+                <div class ="company epsilon">Price Shift Epsilon </div>
+                <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>
+        <div class="input-field">
+                <div class ="company mobile">Price Shift Mobile </div>
+                <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>
+        <div class="input-field">
+                <div class ="company iota">Price Shift Iota </div>
+                <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>
+        <div class="input-field">
+                <div class ="company theta">Price Shift Theta </div>
+                <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>
+        <div class="input-field">
+                <div class ="company kappa">Price Shift Kappa </div>
+                <select class = "dropdown"> <option value = "0%">0%</option></select>
+        </div>      
+    </div>
+
+    <div class="input-col2">
+        <div class="input-field">
+            <div class ="company alpha">High Data Tariff (Alpha only) </div>
+            <select class = "dropdown"> <option value = "10GB">10GB</option></select>
+        </div>
+    </div>
+
+    <div class="input-col3 after">
+    <div class="input-field">
+        <div class ="company alpha">Unlimited Tariff Alpha </div>
+            <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>
+    <div class="input-field">
+        <div class ="company beta">Unlimited Tariff Beta </div>
+        <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>       
+    <div class="input-field">
+        <div class ="company gamma">Unlimited Tariff Gamma </div>
+        <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div> 
+    <div class="input-field">
+            <div class ="company epsilon">Unlimited Tariff Epsilon </div>
+            <select class = "dropdown"> <option value = "+5">available at +$5</option></select>
+    </div>
+    <div class="input-field">
+            <div class ="company mobile">Unlimited Tariff Mobile </div>
+            <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>
+    <div class="input-field">
+            <div class ="company iota">Unlimited Tariff Iota </div>
+            <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>
+    <div class="input-field">
+            <div class ="company theta">Unlimited Tariff Theta </div>
+            <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>
+    <div class="input-field">
+            <div class ="company kappa">Unlimited Tariff Kappa </div>
+            <select class = "dropdown"> <option value = "n.a.">not available</option></select>
+    </div>    
+
+</div>
+
+<div id="output">
+  <!-- à compléter -->
+</div>
+
+<footer>
+</footer>
+
+</body>
+
+</html>
