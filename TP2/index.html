@@ -50,11 +50,31 @@ clear:both;
   width:auto;
 }
 
+#image {
+  width:auto;
+  height: auto;
+  display : 
+}
+
+#output {
+  width:auto;
+  display : none;
+  left: 200px
+}
+
 .input-field {
   border: 2px solid black;
   margin-top: 10px;
   padding: 0px;
 }
+
+.output-field {
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+
 
 .company {
 text-align: center;
@@ -99,8 +119,13 @@ color:white;
 
 <script>
   panel = function(el, show, hide) {
-  <!-- à compléter -->
+  document.getElementById(show).style.display = 'initial';
+  document.getElementById(hide).style.display = 'none';
   }
+  changement = function(){
+      return "http://cours.polymtl.ca/MDesmarais/log2420/20193/Tp/fig4.png";
+  }
+
 </script>
 
 </head>
@@ -113,7 +138,7 @@ color:white;
 <nav>
   <ul style="list-style-type:none;">
     <li><a href="#" onclick="panel(this, 'inputs','output')" style="font-weight: bold;">Inputs</a></li>
-    <li><a href="#" onclick="panel(this, 'output','inputs')">Output</a></li>
+    <li><a href="#" onclick="panel(this, 'output','inputs')" >Output</a></li>
   </ul>
 </nav>
 
@@ -198,7 +223,7 @@ color:white;
 </div>
 
 <div id="output">
-  <!-- à compléter -->
+    <img src="http://cours.polymtl.ca/MDesmarais/log2420/20193/Tp/fig3.png">
 </div>
 
 <footer>
